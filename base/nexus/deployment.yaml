@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   labels:
     app: nexus
-    app.kubernetes.io/instance: nexus
     app.kubernetes.io/name: nexus
     app.kubernetes.io/part-of: nexus
   name: nexus
