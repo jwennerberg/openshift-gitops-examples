@@ -3,7 +3,10 @@ kind: Kustomization
 
 namespace: jwennerb-infra
 
-bases:
-  - ../../../base/nexus/
-  - ../../../base/sonarqube/
-  - pipeline/
+#bases:
+  #  - ../../../base/sonarqube/
+    #  - pipeline/
+
+resources:
+  - nexus/argocd-app-nexus.yaml
+  - sonarqube/argocd-app-sonarqube.yaml

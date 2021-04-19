@@ -1,0 +1,17 @@
+kind: Application
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: nexus
+spec:
+  project: default
+  destination:
+    namespace: jwennerb-infra
+    server: https://kubernetes.default.svc
+  source:
+    path: overlays/demo/infra/nexus/
+    repoURL: https://github.com/jwennerberg/openshift-gitops-examples.git
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
