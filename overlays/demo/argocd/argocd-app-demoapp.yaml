@@ -1,8 +1,9 @@
 kind: Application
 apiVersion: argoproj.io/v1alpha1
 metadata:
-  name: jwennerb-infra
+  name: demoapp
 spec:
+  project: default
   destination:
     namespace: jwennerb-infra
     server: https://kubernetes.default.svc
