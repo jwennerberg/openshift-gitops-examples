@@ -6,3 +6,4 @@ namespace: jwennerb-infra
 bases:
   - ../../../base/nexus/
   - ../../../base/sonarqube/
+  - pipeline/
