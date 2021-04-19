@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: jwennerb-infra
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: jwennerb-dev
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: jwennerb-stage
+
