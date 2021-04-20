@@ -10,15 +10,15 @@ spec:
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: petclinic-stage-workspace
-spec:
-  resources:
-    requests:
-      storage: 5Gi
-  volumeMode: Filesystem
-  accessModes:
-    - ReadWriteOnce
+#---
+#apiVersion: v1
+#kind: PersistentVolumeClaim
+#metadata:
+#  name: petclinic-stage-workspace
+#spec:
+#  resources:
+#    requests:
+#      storage: 5Gi
+#  volumeMode: Filesystem
+#  accessModes:
+#    - ReadWriteOnce
