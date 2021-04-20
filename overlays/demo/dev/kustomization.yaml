@@ -5,3 +5,4 @@ namespace: jwennerb-dev
 
 resources:
 - rolebinding.yaml
+- test-secret.yaml
