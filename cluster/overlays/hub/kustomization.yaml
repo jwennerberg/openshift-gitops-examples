@@ -5,6 +5,7 @@ resources:
   - github.com/redhat-cop/gitops-catalog/openshift-gitops-operator/overlays/stable?ref=main
   - github.com/redhat-cop/gitops-catalog/openshift-pipelines-operator/overlays/stable?ref=main
     #- github.com/redhat-cop/gitops-catalog/advanced-cluster-management/operator/overlays/release-2.4?ref=main
+  - argocd.yaml
 
 patchesJson6902:
   - target:
