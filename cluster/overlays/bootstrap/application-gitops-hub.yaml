@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-hub
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: in-cluster
+    namespace: gitops-hub
+  project: default
+  source:
+    repoURL: https://github.com/jwennerberg/openshift-gitops-examples.git
+    targetRevision: multicloud
+    path: cluster/overlays/hub
+  syncPolicy:
+    automated: {}
